@@ -1,18 +1,25 @@
 {
-  "@context": "https://www.w3.org/ns/did/v1",
-  "id": "did:web:cloud-on-prem.github.io",
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/ed25519-2020/v1"
+  ],
+  "id": "did:web:pre.ms",
   "verificationMethod": [
     {
-      "id": "did:web:cloud-on-prem.github.io#owner",
-      "type": "Ed25519VerificationKey2018",
-      "controller": "did:web:cloud-on-prem.github.io",
-      "publicKeyBase64": "AAAAC3NzaC1lZDI1NTE5AAAAIKjFkwEwvBBLSuvtivCF8ROtLInyEBJBp0bRVFw0tV+P"
+      "id": "did:web:pre.ms#owner",
+      "type": "Ed25519VerificationKey2020",
+      "controller": "did:web:pre.ms",
+      "publicKeyJwk": {
+        "kty": "OKP",
+        "crv": "Ed25519",
+        "x": "qMWTATC8EEtK6-2K8IXxE60sifIQEkGnRtFUXDS1X48"
+      }
     }
   ],
   "authentication": [
-    "did:web:cloud-on-prem.github.io#owner"
+    "#owner"
   ],
   "assertionMethod": [
-    "did:web:cloud-on-prem.github.io#owner"
+    "#owner"
   ]
 }
