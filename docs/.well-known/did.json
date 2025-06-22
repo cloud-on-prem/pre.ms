@@ -1,0 +1,18 @@
+{
+  "@context": "https://www.w3.org/ns/did/v1",
+  "id": "did:web:cloud-on-prem.github.io",
+  "verificationMethod": [
+    {
+      "id": "did:web:cloud-on-prem.github.io#owner",
+      "type": "Ed25519VerificationKey2018",
+      "controller": "did:web:cloud-on-prem.github.io",
+      "publicKeyBase64": "AAAAC3NzaC1lZDI1NTE5AAAAIKjFkwEwvBBLSuvtivCF8ROtLInyEBJBp0bRVFw0tV+P"
+    }
+  ],
+  "authentication": [
+    "did:web:cloud-on-prem.github.io#owner"
+  ],
+  "assertionMethod": [
+    "did:web:cloud-on-prem.github.io#owner"
+  ]
+}
